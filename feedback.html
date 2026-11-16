@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شیرینی شەکەرچی — فرێش و تازە</title>
+    <!-- Fonts -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-kufi-arabic@5.3.0/index.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+                        WhatsApp گەیاندن بۆ ماڵ بە ١,٠٠٠ دینار لە شەیدان — داواکاری بە  
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-logo">
+                <img src="images/logo-icon.png" alt="لۆگۆ" class="logo-icon">
+                <span class="logo-text">شیرینی شەکەرچی</span>
+            </a>
+
+            <button id="menu-btn" class="menu-btn">☰</button>
+
+            <nav class="site-nav" >
+                <a href="index.html" >سەرەتا</a>
+                <a href="menu.html">مینو</a>
+                <a href="about.html" >دەربارە</a>
+                <a href="feedback.html" class="active">ڕای کڕیاران</a>
+                <a href="contact.html">پەیوەندی</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-btn" class="btn btn-primary">باری تاریک</button>
+                <a href="cart.html" class="cart-btn">🛒 <span class="cart-count">0</span></a>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="sectiontitle">ڕای کڕیاران</h1>
+                <p style="text-align: center; margin-bottom: 30px;">
+                    ئێمە خۆشحاڵ دەبین ڕای تۆ بزانین بۆ ئەوەی خزمەتگوزارییەکانمان باشتر بکەین.
+                </p>
+                <div class="feedback-form-container" id="feedback-form-container">
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <label for="fb-name">ناو</label>
+                            <input type="text" id="fb-name" required placeholder="ناوی تۆ...">
+                        </div>
+
+                        <div class="form-group">
+                            <label>چەندێک ڕازی بوویت بە شیرینییەکانمان؟</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="بەرزترین">★</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fb-message">نامە یان پێشنیار</label>
+                            <textarea id="fb-message" rows="5" required placeholder="بیروڕات بنووسە..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent">ناردنی ڕای</button>
+                    </form>
+                </div>
+
+                <!-- This will show after they submit -->
+                <div id="feedback-success" style="display: none; text-align: center; padding: 40px;">
+                    <h2 style="color: var(--color-primary);">سوپاس بۆ ڕاکەت! ❤️</h2>
+                    <p>ڕای تۆ بە سەرکەوتوویی نێردرا.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>شیرینی شەکەرچی</h3>
+                    <p>شیرینترین پاقلەوا و کێک بە دەستوری ڕەسەنی کوردی. شەیدان.</p>
+                </div>
+                
+                <div>
+                    <h3>بەشەکان</h3>
+                    <a href="index.html">سەرەتا</a>
+                    <a href="menu.html">مینو</a>
+                    <a href="about.html">دەربارە</a>
+                    <a href="feedback.html">ڕای کڕیاران</a>
+                </div>
+                
+                <div>
+                    <h3>پەیوەندی</h3>
+                    <p>کاتی کارکردن: هەموو ڕۆژێک</p>
+                    <p>گەیاندن بۆ ماڵ: 1,000 د.ع</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 شیرینی شەکەرچی — هەموو مافەکان پارێزراون</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
